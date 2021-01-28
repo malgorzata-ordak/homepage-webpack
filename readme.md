@@ -8,7 +8,7 @@ Moja strona domowa. Tu się dzieją różne dziwne i tajemnicze rzeczy.
 
 Chodzi tu o to, by się czegoś nauczyć i się dobrze bawić.
 
-## Przdatne linki:
+### Przydatne polecenia:
 
 `npm run start` - runs development mode
 
