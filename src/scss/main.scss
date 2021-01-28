@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  background: #490927;
-  background-color: #8a7473;
+  
+  background-color: #a79997;
 
   background-size: 100%;
   min-height: 100%;
@@ -70,9 +70,9 @@ nav a {
     position: fixed;
     width: 100vw;
     top: 0;
-    background: #706369;
-    background-color: #faaca8;
-    background-image: linear-gradient(332deg, #faaca8 0%, #ddd6f3 61%);
+    background: #b9a6ab;
+    // background-color: #faaca8;
+    // background-image: linear-gradient(332deg, #faaca8 0%, #ddd6f3 61%);
     /* background: white; */
     /* display: flex; */
     /* flex-direction: column; */
@@ -81,6 +81,7 @@ nav a {
 }
 .action {
   margin-top: 80px;
+  background:#dab9c1;
 }
 
 
@@ -127,12 +128,12 @@ nav a {
 }
 
 b {
-  color: #68a691;
+  color: #4d8874;
 }
 
 .pomysł {
   &__seledyn {
-    color: #68a691;
+    color: #4d8874;
   }
   &__opis {
   }
@@ -196,7 +197,7 @@ h2 {
   }
 
   body {
-    background-color: #CFCFCF;
+    background-color: #626f9e;
     
   }
 
@@ -214,7 +215,7 @@ h2 {
   }
 
   .footer {
-    background-color: #fbda61;
+    background-color: #b9a6ab;
     margin: 0 auto;
   }
 
