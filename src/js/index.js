@@ -6,6 +6,28 @@ console.log(moment().startOf('day').fromNow());
 import '../scss/main.scss';
 import '../js/script.js';
 
+fetch("https://api.github.com/users/malgorzata-ordak/repos")
+.then(resp => resp.json ())
+.then(resp => {
+    
+for (let repo of resp) {
+    const{name, html_url} = repo;
+    const listaRepo = document.querySelector('.lista--js');
+    const szablon = `<li>
+    ${name} <a href = "${html_url}> title =link do repozytorium ${name} na Githube"> link do githuba</a>
+    </li>`;
+
+    listaRepo.innerHTML += szablon;
+
+    console.log (`${name} ${html_url}`)
+}
+})
+.catch(error => {
+    console.log('nie udało się pobrać');
+})
+
+
+
 const hamburger = document.querySelector('.hamburger--js');
 hamburger.addEventListener('click', ()=> {
     const nav = document.querySelector('.nawigacja--js');

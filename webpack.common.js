@@ -88,5 +88,26 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/pd-3.2.1.html",
+      inject: true,
+      // chunks: ["index", "another"],
+      filename: "pd-3.2.1.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/pd-3.2.2.html",
+      inject: true,
+      // chunks: ["index", "another"],
+      filename: "pd-3.2.2.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/pages/pd-3.2.3.html",
+      inject: true,
+      // chunks: ["index", "another"],
+      filename: "pd-3.2.3.html",
+    }),
   ],
 };

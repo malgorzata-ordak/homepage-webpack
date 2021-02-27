@@ -3,19 +3,35 @@
   <head class="head">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Strona domowa</title>
+    <meta name="description" content="Kilka słów o mnie" />
+    <!-- Title -->
+    <meta property="og:title" content="Strona domowa" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Kilka słów o mnie" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta
+      property="og:url"
+      content="https://malgorzata-ordak.github.io/homepage-webpack/"
+    />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta
+      property="og:image"
+      content="https://malgorzata-ordak.github.io/homepage-webpack/og.png"
+    />
 
-   
+    <!-- uncomment the line below to enable PWA  -->
+    <!-- <link rel="manifest" href="manifest.json" /> -->
   </head>
 
   <body>
     <header class="header__pierwszy">
-      
       <script src="dist/main.js"></script>
 
-      <nav class="nawigacja nawigacja--js"
-      >
-        <a class="nawigacja__link nawigacja__link--homepage" href="index.html
+      <nav class="nawigacja nawigacja--js">
+        <a
+          class="nawigacja__link nawigacja__link--homepage"
+          href="index.html
         "
           >Strona główna</a
         >
@@ -36,12 +52,14 @@
         <h1 class="malinowy__h1 malinowy__h1--js" id="podkresalenie">
           Małgorzata Ordak – strona domowa
         </h1>
-        <p>Od początku dnia minęło: <span class= "time--js"></span></p>
+        <p>Od początku dnia minęło: <span class="time--js"></span></p>
       </header>
 
       <div class="div">
         <section class="blok">
-          <h2 class="blok__fioletowy-h2">Kilka słów o mnie</h2>
+          <h2 class="blok__fioletowy-h2">
+            Kilka słów o mnie <span class="ziemia"> 🌏 </span>
+          </h2>
           <p class="test">Witam Cię serdecznie :)</p>
 
           <img
@@ -68,18 +86,23 @@
           też rozpoczęłam poszukiwania swojej nowej ścieżki zawodowej.
 
           <article class="pomysł">
-            <h3 class="pomysł__seledyn">Pierwszy pomysł</h3>
+            <h3 class="pomysł__seledyn">
+              Pierwszy pomysł
+              <span class="żarówka żarówka--animacja"> 💡 </span>
+            </h3>
             <p class="pomysł__opis">
-              Pierwszą opcją, jaka przyszła mi do głowy, było zrobienie kursu instruktora fitnessu.
-              Początkowo pomysł bardzo mi się podobał bo przecież lubię się
-              ruszać, lubię się zmęczyć. Jednak po czasie entuzjazm opadł.
-              Doszłam do wniosku, że to może być raczej zajęcie dodatkowe, a nie
-              coś na całe życie.
+              Pierwszą opcją, jaka przyszła mi do głowy, było zrobienie kursu
+              instruktora fitnessu. Początkowo pomysł bardzo mi się podobał bo
+              przecież lubię się ruszać, lubię się zmęczyć. Jednak po czasie
+              entuzjazm opadł. Doszłam do wniosku, że to może być raczej zajęcie
+              dodatkowe, a nie coś na całe życie.
             </p>
           </article>
 
           <article>
-            <h3 class="pomysł__seledyn">Drugi pomysł</h3>
+            <h3 class="pomysł__seledyn">
+              Drugi pomysł <span class="żarówka żarówka--animacja"> 💡 </span>
+            </h3>
             <p class="pomysł__opis">
               Kolejny pomysł to programowanie. Mimo, że nigdy nie uważałam, że
               jestem osobą, która posiada zdolności w tym kierunku, to
@@ -103,6 +126,15 @@
             robienia prac domowych z tygodnia VI.
           </p>
         </section>
+
+        <section class="repozytoria">
+          <h2 class= "blok__fioletowy-h2"> Moje repozytoria:</h2>
+          
+          <ul class= "lista lista--js">
+            <!-- <li class = "lista__elementy"></li> -->
+          </ul>
+         
+        </section>
       </aside>
     </main>
 
@@ -110,8 +142,5 @@
       Strona domowa Małgosi Ordak, służy celom edukacyjnym, prawa autorskie
       zastrzeżone.
     </footer>
-
-    
-   
   </body>
 </html>

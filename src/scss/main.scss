@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  
   background-color: #a79997;
 
   background-size: 100%;
@@ -48,9 +47,6 @@ nav a {
   display: inline-block;
   /* padding: 16px; */
 }
-
-
-
 
 .main {
   max-width: 1000px;
@@ -81,9 +77,8 @@ nav a {
 }
 .action {
   margin-top: 80px;
-  background:#dab9c1;
+  background: #dab9c1;
 }
-
 
 .article {
   grid-area: article;
@@ -101,11 +96,9 @@ nav a {
   border: 1px #b9a6ab dashed;
   margin-top: 6px;
 
-
   &__fioletowy-h2 {
-
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -117,8 +110,8 @@ nav a {
     border: 2px #af1b3f solid;
     border-radius: 10px;
     background: #b9a6ab;
-    }
-  
+  }
+
   &__fioletowy-h2--special {
     border: 3px #af1b3f groove;
     background: transparent;
@@ -128,12 +121,12 @@ nav a {
 }
 
 b {
-  color: #4d8874;
+  color: #9fc5b9;
 }
 
 .pomysł {
   &__seledyn {
-    color: #4d8874;
+    color: #9fc5b9;
   }
   &__opis {
   }
@@ -147,6 +140,11 @@ h2 {
   color: #af1b3f;
   top: 16px;
   margin-top: 40px;
+  transition: color 2s linear, font-size 3s ease-in-out;
+  &:hover {
+    color: yellow;
+    font-size: 44px;
+  }
 }
 
 .fioletowy-h2 {
@@ -189,6 +187,53 @@ h2 {
 
 .zdjęcie {
   padding-bottom: 16px;
+  transition: transform 2s linear;
+  transform-origin: left;
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.3) translate(100px, 50px);
+    // transform: translate(70px, 50px);
+  }
+}
+
+// .lista {
+//   &__elementy {
+//     padding: 15px;
+
+//   }
+// // padding: 15px 0;
+// padding: 16px;
+
+// }
+@keyframes ziemia {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: scale(360deg);
+  }
+}
+
+.ziemia {
+  display: inline-block;
+  animation: ziemia 10s linear infinite;
+  font-size: 30px;
+  margin-left: 220px;
+}
+
+@keyframes żarówa {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.żarówka {
+  display: inline-block;
+  &--animacja {
+    animation: żarówa 2s linear infinite;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -198,7 +243,6 @@ h2 {
 
   body {
     background-color: #626f9e;
-    
   }
 
   .main {
