@@ -1,4 +1,4 @@
-![cover](./github/frontend-developer.png)
+![cover](./github/repo-zdj.png)
 
 # Homepage Małgosi
 
