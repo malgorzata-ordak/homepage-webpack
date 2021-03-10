@@ -1,18 +1,13 @@
-![cover](./github/frontend-developer.png)
+![cover](./github/repo-zdj.png)
 
 # Homepage Małgosi
 
-Moja strona domowa. Tu się dzieją różne dziwne i tajemnicze rzeczy.
+Moja strona domowa. Tu się dzieją różne dziwne i tajemnicze rzeczy 😉. Powstawała w ramach mojego pierwszeo projektu, była zatem takim moim *królikiem doświadczalnym*. Edytowałam ją wielokrotnie, testowałam różne rozwiązania i sprawdzałam w praktyce wiedzę zdobytą podczas kursu ***WTF Co ten frontend***.   
 
-## O co tu chodzi?
+## Co tu można znaleźć?
 
-Chodzi tu o to, by się czegoś nauczyć i się dobrze bawić.
+Na stronie można przeczytać kilka słów o tym kim jestem, skąd się tu wzięłam, co lubię robić. Jest tu również sekcja z listą moich repozytoriów.
 
-### Przydatne polecenia:
 
-`npm run start` - runs development mode
 
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
