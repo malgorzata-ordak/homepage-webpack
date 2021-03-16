@@ -205,36 +205,14 @@ h2 {
 // padding: 16px;
 
 // }
-@keyframes ziemia {
-  from {
-    transform: rotate(359deg);
-  }
-  to {
-    transform: scale(360deg);
-  }
-}
-
 .ziemia {
-  display: inline-block;
-  animation: ziemia 10s linear infinite;
-  font-size: 30px;
-  margin-left: 220px;
+  display: none;
 }
 
-@keyframes żarówa {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.3);
-  }
-}
 .żarówka {
-  display: inline-block;
-  &--animacja {
-    animation: żarówa 2s linear infinite;
-  }
+  display: none;
 }
+
 
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -257,6 +235,38 @@ h2 {
     max-width: 1000px;
     margin: 0px auto;
   }
+
+  @keyframes ziemia {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: scale(360deg);
+    }
+  }
+  
+  .ziemia {
+    display: inline-block;
+    animation: ziemia 10s linear infinite;
+    font-size: 30px;
+    margin-left: 220px;
+  }
+  
+  @keyframes żarówa {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
+  .żarówka {
+    display: inline-block;
+    &--animacja {
+      animation: żarówa 2s linear infinite;
+    }
+  }
+  
 
   .footer {
     background-color: #b9a6ab;
